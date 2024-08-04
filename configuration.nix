@@ -129,6 +129,10 @@
 	zoxide
 	yt-dlp
 	scrot
+	vlc
+	flameshot
+	maim
+	cbonsai
   ];
 
   ##fonts##
