@@ -66,6 +66,8 @@
 	};
 
   programs.zsh.enable = true;
+  
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];  
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -126,6 +128,7 @@
 	eza
 	zoxide
 	yt-dlp
+	scrot
   ];
 
   ##fonts##
