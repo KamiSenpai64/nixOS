@@ -22,7 +22,30 @@
     git-crypt
     gnupg
     hello 
-  ];
+    cowsay 
+    ungit
+    virt-manager
+    qemu_full
+    genymotion
+    modrinth-app
+    ferium
+    ];
+  
+  programs.git = {
+    enable = true;
+    userName = "KamiSenpai64";
+    userEmail = "miuletdaniel@gmail.com";
+    extraConfig = {
+        init.defaultBranch = "main";
+        };
+  };
+  
+  dconf.settings = {
+  "org/virt-manager/virt-manager/connections" = {
+    autoconnect = ["qemu:///system"];
+    uris = ["qemu:///system"];
+  };
+};
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

@@ -91,10 +91,13 @@
   isNormalUser  = true;
   home  = "/home/daniel";
   description  = "that dawg";
-  extraGroups  = [ "wheel" "networkmanager" ];
+  extraGroups  = [ "wheel" "networkmanager" "libvirtd" ];
   };
  
   users.defaultUserShell = pkgs.zsh; 
+  
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -139,6 +142,8 @@
 	blender
 	git-crypt
 	lazygit
+	pavucontrol
+	pwvucontrol
   ];
 
   ##fonts##
