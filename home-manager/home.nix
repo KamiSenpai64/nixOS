@@ -23,13 +23,12 @@
     gnupg
     hello 
     cowsay 
-    ungit
     virt-manager
     qemu_full
-    genymotion
-    modrinth-app
-    ferium
-    ];
+    minecraft
+    prismlauncher
+    ncdu
+];
   
   programs.git = {
     enable = true;
