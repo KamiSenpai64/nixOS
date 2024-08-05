@@ -22,8 +22,14 @@
     git-crypt
     gnupg
     hello 
-     
+    cowsay 
   ];
+  
+  programs.git = {
+    enable = true;
+    userName = "KamiSenpai64";
+    userEmail = "miuletdaniel@gmail.com";
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
