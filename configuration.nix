@@ -31,7 +31,7 @@
   networking.wireless.iwd.enable = true;
 
   # Set your time zone.
-  time.timeZone = "Europe/London";
+  time.timeZone = "Europe/Bucharest";
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -107,17 +107,13 @@
 	dhcpcd
 	firefox
 	i3
-	gnome.gdm
 	xorg.xf86videointel
 	xorg.xorgserver
 	xorg.xinit
 	lightdm
 	lightdm-gtk-greeter
 	git
-	dwm
-	dmenu
 	feh
-	alacritty
 	kitty
 	rofi
 	picom
@@ -139,7 +135,6 @@
  	jdk
 	unzip
 	gnupg
-	blender
 	git-crypt
 	lazygit
 	pavucontrol
